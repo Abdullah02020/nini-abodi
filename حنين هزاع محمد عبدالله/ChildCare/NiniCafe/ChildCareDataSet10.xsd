@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChildCareDataSet10" targetNamespace="http://tempuri.org/ChildCareDataSet10.xsd" xmlns:mstns="http://tempuri.org/ChildCareDataSet10.xsd" xmlns="http://tempuri.org/ChildCareDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ChildCareConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ChildCareConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NiniCafe.Properties.Settings.GlobalReference.Default.ChildCareConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_3TableAdapter" GeneratorDataComponentClassName="View_3TableAdapter" Name="View_3" UserDataComponentName="View_3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ChildCareConnectionString (Settings)" DbObjectName="ChildCare.dbo.View_3" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SubscriptionID, UserID, UserName, ChildID, ChildName, ActivityID, ActivityName, FoodID, FoodName, Price FROM dbo.View_3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SubscriptionID" DataSetColumn="SubscriptionID" />
+              <Mapping SourceColumn="UserID" DataSetColumn="UserID" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="ChildID" DataSetColumn="ChildID" />
+              <Mapping SourceColumn="ChildName" DataSetColumn="ChildName" />
+              <Mapping SourceColumn="ActivityID" DataSetColumn="ActivityID" />
+              <Mapping SourceColumn="ActivityName" DataSetColumn="ActivityName" />
+              <Mapping SourceColumn="FoodID" DataSetColumn="FoodID" />
+              <Mapping SourceColumn="FoodName" DataSetColumn="FoodName" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ChildCareDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ChildCareDataSet10" msprop:Generator_UserDSName="ChildCareDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_3" msprop:Generator_TableClassName="View_3DataTable" msprop:Generator_TableVarName="tableView_3" msprop:Generator_TablePropName="View_3" msprop:Generator_RowDeletingName="View_3RowDeleting" msprop:Generator_RowChangingName="View_3RowChanging" msprop:Generator_RowEvHandlerName="View_3RowChangeEventHandler" msprop:Generator_RowDeletedName="View_3RowDeleted" msprop:Generator_UserTableName="View_3" msprop:Generator_RowChangedName="View_3RowChanged" msprop:Generator_RowEvArgName="View_3RowChangeEvent" msprop:Generator_RowClassName="View_3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SubscriptionID" msprop:Generator_ColumnVarNameInTable="columnSubscriptionID" msprop:Generator_ColumnPropNameInRow="SubscriptionID" msprop:Generator_ColumnPropNameInTable="SubscriptionIDColumn" msprop:Generator_UserColumnName="SubscriptionID" type="xs:int" />
+              <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" type="xs:int" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChildID" msprop:Generator_ColumnVarNameInTable="columnChildID" msprop:Generator_ColumnPropNameInRow="ChildID" msprop:Generator_ColumnPropNameInTable="ChildIDColumn" msprop:Generator_UserColumnName="ChildID" type="xs:int" />
+              <xs:element name="ChildName" msprop:Generator_ColumnVarNameInTable="columnChildName" msprop:Generator_ColumnPropNameInRow="ChildName" msprop:Generator_ColumnPropNameInTable="ChildNameColumn" msprop:Generator_UserColumnName="ChildName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActivityID" msprop:Generator_ColumnVarNameInTable="columnActivityID" msprop:Generator_ColumnPropNameInRow="ActivityID" msprop:Generator_ColumnPropNameInTable="ActivityIDColumn" msprop:Generator_UserColumnName="ActivityID" type="xs:int" />
+              <xs:element name="ActivityName" msprop:Generator_ColumnVarNameInTable="columnActivityName" msprop:Generator_ColumnPropNameInRow="ActivityName" msprop:Generator_ColumnPropNameInTable="ActivityNameColumn" msprop:Generator_UserColumnName="ActivityName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FoodID" msprop:Generator_ColumnVarNameInTable="columnFoodID" msprop:Generator_ColumnPropNameInRow="FoodID" msprop:Generator_ColumnPropNameInTable="FoodIDColumn" msprop:Generator_UserColumnName="FoodID" type="xs:int" />
+              <xs:element name="FoodName" msprop:Generator_ColumnVarNameInTable="columnFoodName" msprop:Generator_ColumnPropNameInRow="FoodName" msprop:Generator_ColumnPropNameInTable="FoodNameColumn" msprop:Generator_UserColumnName="FoodName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_3" />
+      <xs:field xpath="mstns:SubscriptionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
